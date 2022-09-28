@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "469481299252",
+    "project_id": "fir-practice-4bb36",
+    "storage_bucket": "fir-practice-4bb36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469481299252:android:5d30fcf88fc7a2ac8f5961",
+        "android_client_info": {
+          "package_name": "com.example.firesafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469481299252-33b5rnk5qh3hs7plrk7qim89m90e1mdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeB-gAvjjKEPGdfmxQKCAbQX6MLNHKI-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469481299252-33b5rnk5qh3hs7plrk7qim89m90e1mdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
