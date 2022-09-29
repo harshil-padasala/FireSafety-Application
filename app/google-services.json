@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "40024867027",
+    "project_id": "firesafety-4a80c",
+    "storage_bucket": "firesafety-4a80c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40024867027:android:ec8ce3a12a3ec66c8a1426",
+        "android_client_info": {
+          "package_name": "com.example.firesafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40024867027-ij8aolbpr7ps0pgu434p9v0drgh5srt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS4o-z62gj6nrxpcTBYyHJwUP_3Vixh-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40024867027-ij8aolbpr7ps0pgu434p9v0drgh5srt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
