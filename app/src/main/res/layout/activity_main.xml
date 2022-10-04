@@ -10,4 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"/>
 
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_marginTop="200dp"
+        android:id="@+id/Circle_Indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
 </RelativeLayout>

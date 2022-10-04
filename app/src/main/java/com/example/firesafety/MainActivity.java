@@ -9,9 +9,12 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.relex.circleindicator.CircleIndicator;
+
 public class MainActivity extends AppCompatActivity {
 
     ViewPager carousal;
+    CircleIndicator indicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         carousal = findViewById(R.id.viewPager_carousal);
+        indicator = findViewById(R.id.Circle_Indicator);
 
         List<Integer> image_list = new ArrayList<>();
         image_list.add(R.drawable.p1);
@@ -27,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         CarousalAdapter adapter = new CarousalAdapter(image_list);
 
         carousal.setAdapter(adapter);
+
+        indicator.setViewPager(carousal);
 
     }
 }
