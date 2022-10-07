@@ -14,6 +14,13 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 import java.util.regex.Matcher;
@@ -25,6 +32,10 @@ public class LogIn extends AppCompatActivity {
     MaterialButton BtnLogIn;
 
     private FirebaseAuth firebaseAuth;
+    private FirebaseUser user;
+    private DatabaseReference reference;
+    private String userId;
+    private boolean admin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,15 +66,51 @@ public class LogIn extends AppCompatActivity {
 
     }
 
+    private void redirect() {
+        if (admin) {
+            startActivity(new Intent(LogIn.this, FireAlaram.class));
+        } else {
+            startActivity(new Intent(LogIn.this, MainActivity.class));
+        }
+        finish();
+    }
+
     private void loginUser(String email, String password) {
 
         firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        Toast.makeText(LogIn.this, "Successfully logged in.", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LogIn.this, MainActivity.class));
-                        finish();
+
+                        Query q = FirebaseDatabase.getInstance().getReference("users");
+
+                        q.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                if (snapshot.exists()) {
+                                    for (DataSnapshot ss : snapshot.getChildren()) {
+                                        UserInfo user = ss.getValue(UserInfo.class);
+                                        if (user.getEmail().compareTo(email)==0) {
+                                            if (user.isAdmin) {
+                                                admin = true;
+                                            }
+                                        } else {
+                                            System.out.println("Not an intended user...");
+                                        }
+                                    }
+                                    redirect();
+                                } else {
+                                    System.out.println("Error Occurred!");
+                                    Toast.makeText(LogIn.this, "Successfully logged in.", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
