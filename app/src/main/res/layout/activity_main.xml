@@ -53,6 +53,7 @@
                     android:layout_alignParentEnd="true"
                     android:backgroundTint="#ff5757"
                     android:foreground="@drawable/guidelines"
+                    android:onClick="goGuidelines"
                     app:cardCornerRadius="20dp" />
 
                 <TextView
