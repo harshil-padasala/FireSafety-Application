@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         // list of images are here...
         List<Integer> image_list = new ArrayList<>();
-        image_list.add(R.drawable.p1);
-        image_list.add(R.drawable.p2);
-        image_list.add(R.drawable.p3);
+        image_list.add(R.drawable.image_one);
+        image_list.add(R.drawable.image_two);
+        image_list.add(R.drawable.image_three);
         // setting up new carousel adapter...
         CarousalAdapter adapter = new CarousalAdapter(image_list);
 
@@ -73,5 +75,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 4000, 4000);
 
+    }
+
+    public void goContacts(View view) {
+        startActivity(new Intent(MainActivity.this, ContactsActivity.class));
     }
 }
