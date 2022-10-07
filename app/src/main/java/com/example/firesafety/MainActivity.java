@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
     public void goContacts(View view) {
         startActivity(new Intent(MainActivity.this, ContactsActivity.class));
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         new MenuInflater(this).inflate(R.menu.options_menu, menu);
@@ -105,5 +104,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Log Out Successfully.", Toast.LENGTH_LONG).show();
         }
         return super.onOptionsItemSelected(item);
+
+    }
+
+    public void goProfile(View view) {
+        startActivity(new Intent(MainActivity.this, Profile.class));
     }
 }
