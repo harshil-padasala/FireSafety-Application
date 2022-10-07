@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main">#ff5757</color>
     <color name="theme_pink">#ff9494</color>
+    <color name="gray">#B6B2B3</color>
+    <color name="red">#FF5757</color>
 </resources>
