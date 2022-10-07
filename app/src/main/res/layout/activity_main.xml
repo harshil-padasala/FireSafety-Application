@@ -19,6 +19,7 @@
         android:layout_height="48dp"/>
 
     <ScrollView
+        android:background="@drawable/image_dashboard_blur"
         android:layout_below="@id/viewPager_carousal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -36,6 +37,7 @@
                 android:paddingRight="40dp">
 
                 <androidx.cardview.widget.CardView
+                    android:onClick="goContacts"
                     android:id="@+id/contacts"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
@@ -60,6 +62,7 @@
                     android:layout_below="@id/contacts"
                     android:gravity="center"
                     android:text="Contacts"
+                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
@@ -72,6 +75,7 @@
                     android:layout_alignParentEnd="true"
                     android:gravity="right"
                     android:text="Guidelines"
+                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
@@ -113,6 +117,7 @@
                     android:layout_below="@id/profile"
                     android:id="@+id/text_profile"
                     android:layout_width="120dp"
+                    android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:text="Profile" />
 
@@ -125,6 +130,7 @@
                     android:layout_below="@id/tools"
                     android:id="@+id/text_tools"
                     android:layout_width="120dp"
+                    android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:text="Tools" />
 
@@ -165,6 +171,7 @@
                     android:layout_below="@id/quiz"
                     android:id="@+id/text_quiz"
                     android:layout_width="120dp"
+                    android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:text="Quiz" />
 
@@ -177,6 +184,7 @@
                     android:layout_below="@id/faqs"
                     android:id="@+id/text_faqs"
                     android:layout_width="120dp"
+                    android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:text="FAQs" />
 
