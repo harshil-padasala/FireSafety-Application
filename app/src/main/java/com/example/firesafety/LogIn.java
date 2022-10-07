@@ -31,8 +31,8 @@ public class LogIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        Email = findViewById(R.id.email);
-        Password = findViewById(R.id.password);
+        Email = findViewById(R.id.login_email);
+        Password = findViewById(R.id.login_password);
 
         BtnLogIn = findViewById(R.id.login);
 
