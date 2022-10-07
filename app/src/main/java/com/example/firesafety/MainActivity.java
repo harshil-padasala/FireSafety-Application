@@ -84,4 +84,8 @@ public class MainActivity extends AppCompatActivity {
     public void goProfile(View view) {
         startActivity(new Intent(MainActivity.this, Profile.class));
     }
+
+    public void goGuidelines(View view) {
+        startActivity(new Intent(MainActivity.this, Guidelines.class));
+    }
 }
