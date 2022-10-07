@@ -80,4 +80,8 @@ public class MainActivity extends AppCompatActivity {
     public void goContacts(View view) {
         startActivity(new Intent(MainActivity.this, ContactsActivity.class));
     }
+
+    public void goProfile(View view) {
+        startActivity(new Intent(MainActivity.this, Profile.class));
+    }
 }
