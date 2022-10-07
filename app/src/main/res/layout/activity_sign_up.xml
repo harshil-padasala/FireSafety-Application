@@ -8,7 +8,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -32,9 +33,9 @@
                 tools:ignore="HardcodedText" />
 
             <LinearLayout
-                android:layout_marginTop="300dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -47,7 +48,7 @@
                     app:startIconDrawable="@drawable/icon_profile">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/username"
+                        android:id="@+id/signin_username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Username"
@@ -69,7 +70,7 @@
                     app:startIconDrawable="@drawable/icon_mail">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/email"
+                        android:id="@+id/signin_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email"
@@ -91,12 +92,12 @@
                     app:startIconDrawable="@drawable/icon_contacts">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:maxLength="10"
-                        android:id="@+id/phone"
+                        android:id="@+id/signin_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Phone no."
                         android:inputType="phone"
+                        android:maxLength="10"
                         tools:ignore="HardcodedText">
 
                     </com.google.android.material.textfield.TextInputEditText>
@@ -114,7 +115,7 @@
                     app:startIconDrawable="@drawable/icon_area">
 
                     <AutoCompleteTextView
-                        android:id="@+id/area"
+                        android:id="@+id/sign_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Locality / Area"
@@ -134,7 +135,7 @@
                     app:startIconDrawable="@drawable/icon_address">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/address"
+                        android:id="@+id/signin_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Address"
@@ -156,7 +157,7 @@
                     app:startIconDrawable="@drawable/icon_password">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/password"
+                        android:id="@+id/signin_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
@@ -178,7 +179,7 @@
                     app:startIconDrawable="@drawable/icon_password">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/confirm_password"
+                        android:id="@+id/signin_confirm_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Confirm Password"
@@ -190,6 +191,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sign_in"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -201,30 +203,30 @@
                     tools:ignore="HardcodedText" />
 
                 <LinearLayout
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="50dp"
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1.5"
                         android:gravity="right"
                         android:text="Already have an account?"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
                         tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:onClick="logIn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="left"
-                        android:textSize="16sp"
+                        android:onClick="logIn"
                         android:text="   Log In"
                         android:textColor="@color/main"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText,UsingOnClickInXml" />
 

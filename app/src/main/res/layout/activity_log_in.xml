@@ -15,7 +15,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
         android:text="Log In"
         android:textColor="@color/white"
@@ -25,23 +25,23 @@
 
 
     <LinearLayout
-        android:gravity="center_horizontal"
-        android:layout_marginTop="350dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/icon_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             app:endIconMode="clear_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            app:startIconDrawable="@drawable/icon_profile">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/username"
+                android:id="@+id/login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
@@ -54,16 +54,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/icon_password"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"
-            app:endIconMode="password_toggle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/icon_password">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -75,6 +75,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -86,29 +87,29 @@
             tools:ignore="HardcodedText" />
 
         <LinearLayout
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:gravity="right"
                 android:text="Don't have an account?"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:onClick="signUp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="left"
-                android:textSize="16sp"
+                android:onClick="signUp"
                 android:text="   Sign Up"
                 android:textColor="@color/main"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,UsingOnClickInXml" />
 
