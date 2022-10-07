@@ -39,6 +39,8 @@ public class SplashActivity extends AppCompatActivity {
                                 if (user.getEmail().compareTo(user.email)==0) {
                                     if (user.isAdmin) {
                                         admin = true;
+                                    } else {
+                                        admin = false;
                                     }
                                 } else {
                                     System.out.println("Not an intended user...");
@@ -59,6 +61,9 @@ public class SplashActivity extends AppCompatActivity {
 
                     }
                 });
+            } else {
+                startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
+                finish();
             }
         }, 2000);
     }
