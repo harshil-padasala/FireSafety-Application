@@ -97,11 +97,11 @@ public class SignUp extends AppCompatActivity {
         firebaseAuth.createUserWithEmailAndPassword(email, password1)
                 .addOnCompleteListener(SignUp.this, task -> {
                     if (task.isSuccessful()) {
-                        FirebaseDatabase.getInstance().getReference().child(username).child("email").setValue(email);
-                        FirebaseDatabase.getInstance().getReference().child(username).child("phone").setValue(phone);
-                        FirebaseDatabase.getInstance().getReference().child(username).child("area").setValue(area);
-                        FirebaseDatabase.getInstance().getReference().child(username).child("address").setValue(address);
-                        FirebaseDatabase.getInstance().getReference().child(username).child("isAdmin").setValue(false);
+                        FirebaseDatabase.getInstance().getReference().child("users").child(username).child("email").setValue(email);
+                        FirebaseDatabase.getInstance().getReference().child("users").child(username).child("phone").setValue(phone);
+                        FirebaseDatabase.getInstance().getReference().child("users").child(username).child("area").setValue(area);
+                        FirebaseDatabase.getInstance().getReference().child("users").child(username).child("address").setValue(address);
+                        FirebaseDatabase.getInstance().getReference().child("users").child(username).child("isAdmin").setValue(false);
                         Toast.makeText(SignUp.this, "Registration Done.", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SignUp.this, LogIn.class));
 
