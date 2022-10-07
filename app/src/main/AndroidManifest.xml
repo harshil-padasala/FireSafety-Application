@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Quiz"
+            android:exported="false" />
+        <activity
             android:name=".Guidelines"
             android:exported="false" />
         <activity
@@ -44,10 +47,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".FireAlaram"
-            android:exported="false">
-
-        </activity>
+        <activity
+            android:name=".FireAlaram"
+            android:exported="false"></activity>
         <activity
             android:name=".ContactsActivity"
             android:exported="false" />
