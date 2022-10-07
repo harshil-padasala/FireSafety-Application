@@ -77,7 +77,7 @@ public class SignUp extends AppCompatActivity {
                         if (isValidPassword(password1)) {
                             registerUser(username, email, password1, area, address, phone);
                         } else {
-                            Toast.makeText(this, "Invalid Password...", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, "Make a Strong Password...", Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         Toast.makeText(this, "Password is not matching...", Toast.LENGTH_SHORT).show();
@@ -101,6 +101,7 @@ public class SignUp extends AppCompatActivity {
                         FirebaseDatabase.getInstance().getReference().child(username).child("phone").setValue(phone);
                         FirebaseDatabase.getInstance().getReference().child(username).child("area").setValue(area);
                         FirebaseDatabase.getInstance().getReference().child(username).child("address").setValue(address);
+                        FirebaseDatabase.getInstance().getReference().child(username).child("isAdmin").setValue(false);
                         Toast.makeText(SignUp.this, "Registration Done.", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SignUp.this, LogIn.class));
 
