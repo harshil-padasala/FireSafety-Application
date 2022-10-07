@@ -1,5 +1,6 @@
 package com.example.firesafety;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -7,7 +8,13 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         int currentImagePosition = carousal.getCurrentItem();
 
                         // setting up next image to be shown...
-                        if(currentImagePosition == image_list.size()-1) {
+                        if (currentImagePosition == image_list.size() - 1) {
                             currentImagePosition = 0;
                         } else {
                             currentImagePosition++;
@@ -79,6 +86,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void goContacts(View view) {
         startActivity(new Intent(MainActivity.this, ContactsActivity.class));
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        new MenuInflater(this).inflate(R.menu.options_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.options_new1) {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+            finish();
+            Toast.makeText(this, "Log Out Successfully.", Toast.LENGTH_LONG).show();
+        }
+        return super.onOptionsItemSelected(item);
+
     }
 
     public void goProfile(View view) {
