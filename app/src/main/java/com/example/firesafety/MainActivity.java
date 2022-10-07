@@ -118,7 +118,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, Guidelines.class));
     }
 
+
     public void goFAQ(View view) {
         startActivity(new Intent(MainActivity.this, FAQsActivity.class));
+    }
+    public void goQuiz(View view) {
+        startActivity(new Intent(MainActivity.this, Quiz.class));
+
     }
 }
