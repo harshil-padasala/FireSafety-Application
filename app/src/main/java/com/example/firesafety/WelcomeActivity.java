@@ -27,5 +27,12 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(WelcomeActivity.this, SignUp.class));
+            }
+        });
+
     }
 }
