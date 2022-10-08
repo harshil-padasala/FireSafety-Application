@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/fireex"
+                        android:src="@drawable/ex"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -48,6 +48,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
                 android:layout_below="@+id/fireExtinguisher"
                 android:id="@+id/firehose"
                 android:layout_margin="20dp"
@@ -61,7 +62,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/firehose"
+                        android:src="@drawable/house"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -81,6 +82,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
                 android:layout_below="@+id/firehose"
                 android:id="@+id/fireSmoke"
                 android:layout_margin="20dp"
@@ -94,7 +96,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/firesmoke"
+                        android:src="@drawable/smoke"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -114,6 +116,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
                 android:layout_below="@+id/fireSmoke"
                 android:id="@+id/fireSplinker"
                 android:layout_margin="20dp"
@@ -127,7 +130,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/firesprinkler"
+                        android:src="@drawable/sprinkler"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -147,6 +150,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
                 android:layout_below="@+id/fireSplinker"
                 android:id="@+id/fireSandBucket"
                 android:layout_margin="20dp"
@@ -160,7 +164,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/firesandbucket"
+                        android:src="@drawable/sandbucket"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
