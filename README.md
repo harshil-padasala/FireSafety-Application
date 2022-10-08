@@ -6,4 +6,4 @@
 <a href="https://github.com/harshil-padasala">Harshil Padasala</a>
 <a href="https://github.com/HenilMistry">Henil Mistry</a>
 <a href="https://github.com/DevHalvawala">Dev Halvawala</a>
-<a href="">Meet Butani</a>
+<a href="https://github.com/MeetButani27">Meet Butani</a>
