@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guidelines">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                app:videoId="0MO2ohX2Iao"
+                app:autoPlay="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do' s"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:text="\nKnow your building’s evacuation plan.
+\n\nEvacuate calmly and quickly whenever a fire alarm or carbon monoxide alarm sounds.
+\n\nKeep important items such as medications and medical equipment handy for quick access in the event of a building evacuation.
+\n\nKnow two ways out of any building.
+\n\nBefore opening a door, feel it with the back of your hand.
+\n\nIf the door is hot, do not open it.
+\n\nIf you encounter smoke during your evacuation, stay low to the floor.
+\n\nKnow the outside rally point for your building.
+\n\nTest smoke and carbon monoxide alarms regularly.
+\n\nMake sure that hallways and stairway doors close tightly.
+\n\nKnow the locations of fire extinguishers, fire alarm pull stations, and exits.
+\n\nLearn to use a fire extinguisher.
+\n\nExtinguish barbecue coals completely."
+                    tools:ignore="HardcodedText" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Don'ts"
+
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:text="\nLeave candles, incense, barbecue grills or any other open flames unattended. (Note that these items are prohibited in University housing.)
+\n\nUse halogen lamps near curtains or other combustibles. (Halogen lamps are prohibited in University housing).
+\n\nHang tapestries from walls or ceilings.
+\n\nLeave cooking appliances unattended.
+\n\nUse barbecue grills in or on any building or fire escape.
+\n\nDon't overload Power strips.
+\n\nTamper with smoke detectors, carbon monoxide alarms, fire alarms or sprinkler systems.
+\n\nIgnore any building alarm.
+\n\nHang anything from sprinkler heads or pipes.
+\n\nForeign objects may impede the system’s function.
+\n\nProp fire or smoke doors open.
+\n\nUse elevators during an evacuation."
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="550dp"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dodont"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

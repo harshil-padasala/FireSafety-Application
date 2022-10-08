@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/header"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:src="@drawable/user_profile"
+            tools:ignore="ContentDescription" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/gray"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/red"
+            android:paddingLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Dev Shah"
+            android:textSize="22dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Email ID"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="20cs014@charusat.edu.in"
+            android:textSize="22dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Phone no."
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="9876589745"
+            android:textSize="22dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Area/Locality"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/profile_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Town Hall"
+            android:textSize="22dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Address"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:text="Opp. Crystal mall"
+            android:textSize="22dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

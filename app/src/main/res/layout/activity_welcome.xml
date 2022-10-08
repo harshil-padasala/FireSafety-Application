@@ -28,8 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25sp"
-        android:layout_marginTop="85sp"
-        android:text="Fire Safety Awareness App"
+        android:layout_marginTop="95sp"
+        android:text="Fire Safety Application"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -53,43 +53,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="450dp"
-        android:text="Fire Destruction"
-        android:textSize="20sp"
-        tools:ignore="HardcodedText" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="470dp"
-        android:text="Is One Man's Job; Fire Prevention"
-        android:textSize="20sp"
-        tools:ignore="HardcodedText" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="490dp"
-        android:text="Is Every Body's Job."
-        android:textSize="20sp"
+        android:layout_marginRight="30dp"
+        android:padding="12dp"
+        android:text="Fire Destruction Is One Man's Job; Fire Prevention Is Every Body's Job."
+        android:textAlignment="center"
+        android:textSize="18sp"
         tools:ignore="HardcodedText" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/SignIn"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="560dp"
         android:backgroundTint="@color/main"
         android:text="Sign In Now"
         app:cornerRadius="20dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/SignUp"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="610dp"
         android:backgroundTint="@color/main"
         android:text="Create Account"
         app:cornerRadius="20dp" />

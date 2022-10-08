@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
+                android:id="@+id/fireExtinguisher"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                app:cardElevation="11dp"
+                android:layout_height="300dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_weight="0.1"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Fire Extinuguisher"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
+                android:layout_below="@+id/fireExtinguisher"
+                android:id="@+id/firehose"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                app:cardElevation="11dp"
+                android:layout_height="300dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/house"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_weight="0.1"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Fire Hose"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
+                android:layout_below="@+id/firehose"
+                android:id="@+id/fireSmoke"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                app:cardElevation="11dp"
+                android:layout_height="300dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/smoke"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_weight="0.1"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Smoke Detector"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
+                android:layout_below="@+id/fireSmoke"
+                android:id="@+id/fireSplinker"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                app:cardElevation="11dp"
+                android:layout_height="300dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/sprinkler"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_weight="0.1"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Fire Splinker"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="goDescription"
+                android:layout_below="@+id/fireSplinker"
+                android:id="@+id/fireSandBucket"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                app:cardElevation="11dp"
+                android:layout_height="300dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/sandbucket"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_weight="0.1"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Sand Bucket"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
