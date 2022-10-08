@@ -8,6 +8,9 @@
 <img src="https://github.com/devicons/devicon/raw/master/icons/canva/canva-original.svg" title="Canva" alt="Canva" width="40" height="40" style="max-width: 100%;">
 <img src="https://github.com/devicons/devicon/raw/master/icons/figma/figma-original.svg" title="figma" alt="figma" width="40" height="40" style="max-width: 100%;">
 
+## Event
+<img src="https://i.ytimg.com/vi/JHu2YuadxKg/mqdefault.jpg">
+
 ## Contributors
 <a href="https://github.com/harshil-padasala">Harshil Padasala</a><br>
 <a href="https://github.com/HenilMistry">Henil Mistry</a><br>
