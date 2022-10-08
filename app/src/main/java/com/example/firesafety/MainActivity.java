@@ -126,4 +126,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, Quiz.class));
 
     }
+
+    public void goTools(View view) {
+        startActivity(new Intent(MainActivity.this, ToolsActivity.class));
+    }
 }
