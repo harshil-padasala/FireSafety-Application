@@ -44,4 +44,5 @@ dependencies {
 
     implementation 'me.relex:circleindicator:2.1.6'
     implementation 'com.google.android.material:material:1.8.0-alpha01'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0'
 }
