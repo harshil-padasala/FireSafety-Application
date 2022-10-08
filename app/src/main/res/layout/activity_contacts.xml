@@ -29,8 +29,10 @@
             app:cardCornerRadius="15dp">
 
             <RelativeLayout
+                android:id="@+id/fire_btn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="fireCall"
                 android:padding="25dp">
 
                 <com.google.android.material.card.MaterialCardView
@@ -79,6 +81,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="hospitalCall"
                 android:padding="25dp">
 
                 <com.google.android.material.card.MaterialCardView
@@ -124,6 +127,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="PoliceCall"
                 android:padding="25dp">
 
                 <com.google.android.material.card.MaterialCardView
