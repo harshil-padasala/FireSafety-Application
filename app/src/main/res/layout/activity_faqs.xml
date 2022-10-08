@@ -6,11 +6,178 @@
     android:layout_height="match_parent"
     tools:context=".FAQsActivity">
 
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/youtube_player_view"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:videoId="fhKD1CS8pcM"
-        app:autoPlay="true" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="fhKD1CS8pcM"
+                app:autoPlay="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="1. Do I need to evacuate every time the fire alarm sounds?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="Yes! Faculty, staff and students are required to immediately evacuate the building when a fire alarm sounds. Never assume a fire alarm activation indicates a false alarm. ANd always assume that the situation is a real threat.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="2. What safety systems are in place to fight fires?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="Most buildings are equipped with fire alarm and automatic sprinkler systems. These systems will activate when a fire produces enough smoke or heat to trigger them. Fire extinguishers are available for use by trained personnel. Several buildings are also equpiped with standpipe systems for fire department use.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="3. Whata are the leading causes of fires?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="A review indicates that electrical failures are the most common cause of fires on campus, closely followed by unattended candles in dorm rooms and malfunctioning equipment. Other causes of fires during the same time frame include unattended Bunsen burners, unattended cooking, careless cigarette disposal, contractor accidents, and arson.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="4. Can water make fire worse?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="Depending on the type of fire, using water to try and extinguish it can make the situation worse. In the event of a fire, its best to use a fire extinguisher which correlates to the type of fire you’re dealing with, but only attempt to do this if your exit is clear.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="5. Do I need a fire prevention plan?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="It is recommended that any business which carries a higher risk of fire than average, such as from storing combustible waste or chemicals on site, has a fire prevention plan to properly protect both the business and the environment from damage.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="6. In what situations should you not fight a fire?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="Tackling small fires is fine, provided you are cautious and have a clear escape route. If you would need to put yourself in a compromised position, such as having the fire between you and your escape route, then you should not attempt to fight the fire. If you don’t have the right type of fire extinguisher for the fire, or it has started to spread, then do not try to extinguish the fire and prioritise evacuation.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="7. What are the 3 main causes of Fire?">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="Three major causes of fires are cooking equipment overheating, faulty electrical wiring or appliances and smoking.">
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
