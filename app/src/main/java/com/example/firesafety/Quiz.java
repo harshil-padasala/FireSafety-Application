@@ -60,7 +60,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
             if(selectedAnswer.equals(QuestionAnswer.correctAnswers[currentQuestionIndex])){
                 score++;
             }
-            totalQuestionsTextView.setText("Question: " + (currentQuestionIndex+1) + " / " + totalQuestion);
+
             currentQuestionIndex++;
             loadNewQuestion();
         }
@@ -77,7 +77,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
             finishQuiz();
             return;
         }
-
+        totalQuestionsTextView.setText("Question: " + (currentQuestionIndex+1) + " / " + totalQuestion);
         questionTextView.setText(QuestionAnswer.question[currentQuestionIndex]);
         ansA.setText(QuestionAnswer.choices[currentQuestionIndex][0]);
         ansB.setText(QuestionAnswer.choices[currentQuestionIndex][1]);
