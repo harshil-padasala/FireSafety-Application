@@ -12,7 +12,7 @@
 <img src="https://i.ytimg.com/vi/JHu2YuadxKg/mqdefault.jpg">
 
 ## Contributors
-<img src="https://user-images.githubusercontent.com/84128824/194695976-62ba91e7-dad1-4933-81a5-cc68e0eae779.jpeg" width="50" height="50" border="raduis"><a href="https://github.com/harshil-padasala">Harshil Padasala</a><br>
+<a href="https://github.com/harshil-padasala">Harshil Padasala</a><br>
 <a href="https://github.com/HenilMistry">Henil Mistry</a><br>
 <a href="https://github.com/DevHalvawala">Dev Halvawala</a><br>
 <a href="https://github.com/MeetButani27">Meet Butani</a>
